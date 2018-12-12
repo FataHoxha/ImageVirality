@@ -1,2 +1,2 @@
-# Virality-
-Text Analysis for image vitality
+# Virality+
+Text Analysis for image virality
