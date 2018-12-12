@@ -34,11 +34,11 @@ Execution:
 python3 2_compare.py caption_filename.json comment_filename.json
 ```
 ```
-for file in /text_process/comment_cleaned/*; do
+for file in /comment_cleaned/*; do
     name=${file##*/}
-    if [[ -f /text_process/caption_cleaned/$name ]]; then
+    if [[ -f /caption_cleaned/$name ]]; then
         echo "$name exists in both directories"
-        python3 2_compare.py /text_process/comment_cleaned/$name /text_process/caption_cleaned/$name
+        python3 2_compare.py /comment_cleaned/$name /caption_cleaned/$name
     fi
 done
 ```
