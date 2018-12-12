@@ -13,7 +13,7 @@ python3 1_clean_caption.py filename.json
 
 As an output, a .json file is saved under the folder path: /caption_cleaned/
 
-### 1_clean_comment.py -> cleans all the comment that are present in .json file crawled from Google+.\n
+### 1_clean_comment.py -> cleans all the comment that are present in .json file crawled from Google+.
 
 Execution:
 
