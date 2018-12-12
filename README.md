@@ -2,6 +2,7 @@
 
 ## 1) Preprocessing
 Comments and Captions are enhanced by removing digits, punctuation, lemmatization, stop words,...
+
 -> be aware to check the correct path of the file in input and output.
 
 #### 1_clean_caption.py -> clean all the caption generated during through NeuralTalk.
@@ -24,7 +25,8 @@ python3 1_clean_comment.py filename.json
 
 As an output, a .json file is saved under the folder path: /comment_cleaned/
 
-## 2) Compare: for every post/image, check if there is an overlap between comments and captions
+## 2) Compare 
+For every post/image, check if there is an overlap between comments and captions
 
 Execution:
 	
