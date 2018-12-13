@@ -59,6 +59,7 @@ Ooutput: .json file saved under the folder path: /text_clustered/
 Collect all the worda clustered in the previous step, create a list of them and save in a all_word.csv file.
 Cluster again all the words in the all_word.csv in order to have just the 1000 most significative words.
 
+#### 4.1) Collect all the word 
 Execution:
 ```
 for f in /text_clustered/*.json; 
@@ -67,7 +68,17 @@ do
 done
 
 ```
-Output: .csv file containing all the words
+Output: complete_word_list.csv file containing all the words
+
+#### 4.2) Cluster all the word collected to get the top 1000
+
+Execution:
+```
+  python3 4_dict_cluster.py complete_word_list.csv
+```
+Output: clustered_word_list.csv file containing all the word labelled by cluster 
+Output: 1000_word_list.csv file containing only the top 1000 words
+
 
 ## 5) Evaluation
 For every post all the values of virality score, number of likes, reshares, comments.
