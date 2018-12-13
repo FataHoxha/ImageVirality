@@ -55,7 +55,7 @@ python3 3_clustering.py /text_compared/filename.json
 
 Ooutput: .json file saved under the folder path: /text_clustered/
 
-## 4) Dictionary
+## 4) Word list - top 1000
 Collect all the worda clustered in the previous step, create a list of them and save in a all_word.csv file.
 Cluster again all the words in the all_word.csv in order to have just the 1000 most significative words.
 
@@ -64,7 +64,7 @@ Execution:
 ```
 for f in /text_clustered/*.json; 
 do
-  python3 4_dictionary.py "$f"
+  python3 4_collect_word_list.py "$f"
 done
 
 ```
@@ -74,7 +74,7 @@ Output: complete_word_list.csv file containing all the words
 
 Execution:
 ```
-  python3 4_dict_cluster.py complete_word_list.csv
+  python3 4_cluster_word_list.py complete_word_list.csv
 ```
 Output: clustered_word_list.csv file containing all the word labelled by cluster 
 Output: 1000_word_list.csv file containing only the top 1000 words
