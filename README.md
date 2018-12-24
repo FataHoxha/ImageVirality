@@ -71,15 +71,25 @@ done
 ```
 Output: complete_word_list.csv file containing all the words
 
-#### 4.2) Cluster all the word collected to get the top 1000
+#### 4.3) Cluster all the word collected to get the top 1000
+
+Step applied in order to remove duplicated words and speedup the clustering step
 
 Execution:
 ```
-  python3 4_cluster_word_list.py complete_word_list.csv
+  python3 4_remove_word_duplicate.py complete_word_list.csv
 ```
-Output: clustered_word_list.csv file containing all the word labelled by cluster 
 
-Output: 1000_word_list.csv file containing only the top 1000 words
+Output: final_word_list.csv
+#### 4.4) Cluster all the word collected to get the top 1000
+
+Execution:
+```
+  python3 4_cluster_word_list.py final_word_list.csv
+```
+Output: cluster_result_list.csv file containing all the word labelled by cluster 
+
+Output: opword_result_list.csv file containing only the top 1000 words
 
 
 ## 5) Evaluation
