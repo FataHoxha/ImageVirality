@@ -89,7 +89,7 @@ Execution:
 ```
 Output: cluster_result_list.csv file containing all the word labelled by cluster 
 
-Output: opword_result_list.csv file containing only the top 1000 words
+Output: topword_result_list.csv file containing only the top 1000 words
 
 
 ## 5) Evaluation
